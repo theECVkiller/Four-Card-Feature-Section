@@ -1,0 +1,159 @@
+:root{
+    --texto_sombrado: rgb(104, 104, 104);
+    --color_de_titulo: rgb(63, 63, 63);
+    --sombra_en_ts: 1px 2px 2px rgba(204, 197, 197, 0.692);
+    --sombra_para_cajas: 4px 4px 3px rgba(204, 197, 197, 0.692);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-1{
+    margin: 1em;
+    text-align: center;
+}
+
+.first-tittle{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--texto_sombrado);
+}
+
+.second-tittle{
+    color: var(--color_de_titulo);
+    margin-bottom: 35px;
+}
+
+.description-tittle{
+    color: var(--texto_sombrado);
+}
+
+.tarjeta{
+    overflow: hidden;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 9px 17px rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 17px;
+    width: 330px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.tarjeta>img{
+    width: 50px;
+    margin: 10px;
+    position: relative;
+    left: 80%;
+}
+
+.color-green{
+    background-color: rgb(78, 187, 142);
+    width: 600px;
+    height: 7px;
+    position: relative;
+    left: -17px;
+    top: -17px;
+    color: var(--color_de_titulo);
+}
+
+.color-red{
+    background-color: rgb(250, 98, 98);
+    width: 600px;
+    height: 7px;
+    position: relative;
+    left: -17px;
+    top: -17px;
+    color: var(--color_de_titulo);
+}
+
+.color-orange{
+    background-color: rgb(255, 188, 64);
+    width: 600px;
+    height: 7px;
+    position: relative;
+    left: -17px;
+    top: -17px;
+    color: var(--color_de_titulo);
+}
+
+.color-blue{
+    background-color: rgb(125, 125, 255);
+    width: 600px;
+    height: 7px;
+    position: relative;
+    left: -17px;
+    top: -17px;
+    color: var(--color_de_titulo);
+}
+
+@media (min-width: 1024px){
+    .tarjeta{
+        width: 260px;
+        height: 180px;
+    }
+
+    .tarjeta-1{
+        position: relative;
+        left: -330px;
+        top: 195px;
+    }
+
+    .tarjeta-2{
+        position: relative;
+        top: -150px;
+    }
+
+    .tarjeta-3{
+        position: relative;
+        top: -130px;
+    }
+    
+    .tarjeta-4{
+        position: relative;
+        right: -330px;
+        bottom: 482px;
+    }
+
+    .three-tittle{
+        width: 425px;
+    }
+}
+
+.tarjeta-1:hover{
+    box-shadow: var(--sombra_para_cajas);
+    cursor: pointer;
+}
+
+.tarjeta-2:hover{
+    box-shadow: var(--sombra_para_cajas);
+    cursor: pointer;
+}
+
+.tarjeta-3:hover{
+    box-shadow: var(--sombra_para_cajas);
+    cursor: pointer;
+}
+
+.tarjeta-4:hover{
+    box-shadow: var(--sombra_para_cajas);
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    bottom: 300px;
+}
